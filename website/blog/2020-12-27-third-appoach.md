@@ -9,7 +9,7 @@ tags: [networked-strategy, multiplayer-games]
 ---
 
 This blog just a record for our journal to build a multiplayer table game.
-And this time we was trying to improve the cons of [the second approach](second-approach)
+And this time we was trying to improve the cons of [the second approach](2020-10-14-second-approach.md)
 
 ## Requirements
 1. Client only send inputs to the server
