@@ -24,10 +24,14 @@ For every action that a player does client will send that input to the server, t
 4. Broadcast the state with the list of events of that time
 
 ## Flow Diagram
-![First Approach](/img/blog/first-approach.svg)
+![First Approach](/img/blog/networked-strategies-first-approach.svg)
 
 ## Summary
 1. This is the very naive idea of building our very first prototype for our multiplay table games
 2. The biggest problem of this solution is redundant in every message that the server broadcast 
 to all clients for every action receives from a client. 
-1. We can improve it by only send a state update with only new events.
+3. We can improve it by only send a state update with only new events.
+
+> P/S: We can consider this strategy if likely the one (deterministic) that mentioned in the first blog of the series [Networked Physics from Gafferongames][1]
+
+[1]: https://gafferongames.com/post/deterministic_lockstep/
