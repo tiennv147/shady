@@ -9,23 +9,23 @@ tags: [networked-strategy, multiplayer-games]
 ---
 
 This blog just a record for our journal to build a multiplayer table game.
-And this time we was trying to improve the cons of [the second approach](2020-10-14-second-approach.md)
+And this time we were trying to improve the cons of [the second approach](2020-10-14-second-approach.md)
 
 ## Requirements
 1. Client only send inputs to the server
-2. Server will handle all of logic for the game
+2. Server will handle all of the logic for the game
 3. A player can join in the middle of any session
 4. Client can resume the session after disconnected or crash
-5. Optimize package size of a message send from server to clients for every action receives from client
-6. Support clients to render the changes since a last time they receive state update
-7. Optimize number of broadcasting messages when receiving multiple input from client to other clients
+5. Optimize package size of a message sent from the server to clients for every action receives from a client
+6. Support clients to render the changes since the last time they receive state update
+7. Optimize number of broadcasting messages when receiving multiple inputs from client to other clients
 
 ## Design
-1. Every objects related to a session will have a uid for each one.
-2. Server will setting an interval time to process all of message client send to server during that interval **(50ms => 20 FPS)**
-3. When client send that input to the server will handle logic of that input, and update the state for this session and also add this event to the message will send to client
+1. Every object related to a session will have a UID for each one.
+2. Server will be setting an interval time to process all of the message clients send to the server during that interval **(50ms => 20 FPS)**
+3. When the client sends that input to the server will handle the logic of that input, and update the state for this session, and also add this event to the message that will send to a client
 4. Reply to the client if it's necessary to inform the client for fail/success action
-5. Broadcast the state and events input from client since last time
+5. Broadcast the state and events input from the client since last time
 
 ## State Synchronization
 > What is state synchronization? The basic idea is that, somewhat like deterministic lockstep, we run the simulation on both sides but, unlike deterministic lockstep, we don’t just send input, we send both input and state.
