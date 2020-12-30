@@ -9,6 +9,8 @@ tags: [networked-strategy, multiplayer-games]
 ---
 
 This blog just a record for our journal to build a multiplayer table game.
+In this blog I'll talk about our first solution for networked strategy
+<!--truncate-->
 
 ## Requirements
 1. Client only send inputs to the server

@@ -13,12 +13,17 @@ In this blog I will talk about definition of protobuf file for two main parts of
 + Waiting State
 + Playing State
 
+<!--truncate-->
+
 ## Overview Game Flow
 ### Waiting State
 #### Create a Table
+![Create a table](/img/blog/poker-vn-online-create-table.svg)
 #### Join a Table
 ### Playing State
 
+
+## Protobuf Definition
 
 
 ## References

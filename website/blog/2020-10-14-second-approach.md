@@ -11,6 +11,8 @@ tags: [networked-strategy, multiplayer-games]
 This blog just a record for our journal to build a multiplayer table game.
 And this time we was trying to improve the cons of [the first approach](2020-07-26-first-approach.md)
 
+<!--truncate-->
+
 ## Requirements
 1. Client only send inputs to the server
 2. Server will handle all of logic for the game
