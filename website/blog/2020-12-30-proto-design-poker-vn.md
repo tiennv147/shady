@@ -159,6 +159,8 @@ message PlayerPlayingState {
     Ranking = 4;
     Ranked = 5;
   }
+  // more state if needed
+  // ...
 
   // current cards of player
   // will be empty in waiting state & also empty if 
