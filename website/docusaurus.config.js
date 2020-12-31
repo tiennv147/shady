@@ -9,6 +9,9 @@ module.exports = {
   organizationName: 'tiennv147', // Usually your GitHub org/user name.
   projectName: 'shady', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['protobuf'],
+    },
     navbar: {
       title: 'Shady',
       logo: {
@@ -84,13 +87,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/tiennv147/shady/edit/master/docs/docs',
+            'https://github.com/tiennv147/shady/edit/main/website',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/tiennv147/shady/edit/master/docs/blog',
+            'https://github.com/tiennv147/shady/edit/main/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
