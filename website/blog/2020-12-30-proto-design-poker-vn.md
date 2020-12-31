@@ -249,6 +249,7 @@ message TurnEvent {
 ## References
 + [A complete engine to execute a poker game for multiple players][1]
 + [node.js based poker game server and HTML5 web client][2]
++ [Poker VN: Wikipedia for Tien Len Mien Nam][3]
 
 [1]: https://github.com/mjhbell/node-poker
 [2]: https://github.com/vampserv/node-poker-stack
