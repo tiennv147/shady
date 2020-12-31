@@ -51,6 +51,7 @@ message Message {
     StartRequest = 11;
     StartReply = 12;
 
+    // playing state
     TakeTurnRequest = 13;
     TakeTurnReply = 14;
 
