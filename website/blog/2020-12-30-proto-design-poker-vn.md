@@ -16,7 +16,7 @@ In this blog I will talk about definition of protobuf file for two main parts of
 <!--truncate-->
 
 ## Requirements
-1. Support create personal table a long with auto-table from the system
+1. Support create personal table along with auto-table from the system
 2. Support rejoin/continue a session of a table after disconnected or crash
 3. Support replay a whole session after finish it
 4. Optimize data send & receive between client & server
@@ -215,17 +215,6 @@ enum CardType {
   HEART = 3;
 }
 
-enum LeaveReason {
-  LEAVE_REASON_UNSPECIFIED = 0;
-  USER_SEND_LEAVE = 1;
-  USER_DISCONNECT = 2;
-  NOT_ENOUGH_MONEY = 3;
-  REQUEST_TIME_OUT = 4;
-  KICK_BY_ADMIN = 5;
-  KICK_BY_HOST = 6;
-  ROOM_OUT_OF_SEAT = 7;
-}
-
 message TakeTurnRequest {
   oneof action {
     Combination = 1;
@@ -237,11 +226,23 @@ message TakeTurnReply {
 }
 
 message TurnEvent {
+  oneof event {
+    PlayerAction = 1;
+    PlayAnimaiton = 2;
+    // ...
+  }
+}
+
+message PlayerAction {
   string user_id = 1;
   oneof action {
     Combination = 1;
     SkipTurn = 2;
   }
+}
+
+message PlayAnimaiton {
+
 }
 
 ```
