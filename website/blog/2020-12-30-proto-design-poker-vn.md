@@ -245,10 +245,12 @@ message PlayerAction {
 }
 
 message PlayAnimaiton {
-
 }
-
 ```
+
+## Last words
+The definition of protobuf file above if not complete, I just want to show how can we 
+solve the communication problems for a turn-based cards game.
 
 ## References
 + [A complete engine to execute a poker game for multiple players][1]
